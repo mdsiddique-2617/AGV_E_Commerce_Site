@@ -196,25 +196,43 @@ footer{
     .md-productimages img{
         width: 400px;
     }
+
+    .md-linksiconleft, .md-linksiconright{
+        display: none;
+    }
 }
 
 @media only screen and (max-width:768px){
+
+    .md-logo{
+        align-self: self-start;
+    }
     .md-mainimg img{
         width: 225px;
         margin-bottom: 1rem !important;
         filter: drop-shadow(1px 30px 22px black);
     }
     
-    .md-links1{
+    .md-links1, .md-links2{
         flex-direction: column;
         text-align: center;
-        display: none !important;
+        background-color: red !important;
+        position: relative;
+        transition: 0.5s;
+        top: -250px;
+        padding: 10px;
     }
 
-    .md-links2{
-        flex-direction: column;
-        text-align: center;
-        display: none !important;
+    .md-links1js, .md-links2js{
+        top: 0;
+    }
+
+    .md-links1 a{
+        color: white !important;
+    }
+
+    .md-links2 a{
+        color: white !important;
     }
 
     .md-home2bottom{
@@ -243,6 +261,19 @@ footer{
     .md-productimages img{
         width: 375px;
     }
+
+    .md-linksiconleft, .md-linksiconright{
+        display: block;
+        transition: 1s;
+    }
+
+    .rotatelefticon{
+        transform: rotate(360deg);
+    }
+
+    .rotaterighticon{
+        transform: rotate(-360deg);
+    }
 }
 
 @media only screen and (max-width:425px){
@@ -266,6 +297,36 @@ footer{
         order: -1;
     }
     
+    .md-links1{
+        width: 90%;
+        left: 100%;
+        background-color: white !important;
+        background-image: linear-gradient(to right, red 30%, white 30%, white 70%, red 70%, red 100%);
+    }
+
+    .md-links1 a{
+        color: red !important;
+    }
+
+    .md-links1js{
+        left: 0;
+    }
+
+    .md-links2{
+        width: 90%;
+        right: 100%;
+        background-color: white !important;
+        background-image: linear-gradient(to right, red 30%, white 30%, white 70%, red 70%, red 100%);
+    }
+
+    .md-links2 a{
+        color: red !important;
+    }
+
+    .md-links2js{
+        right: 0;
+    }
+
     .md-mainhome{
         flex-direction: column;
         align-items: center;
