@@ -170,6 +170,11 @@ footer{
     width: 90%;
 }
 
+@media only screen and (max-width:1440px) {
+    .md-linksiconleft, .md-linksiconright{
+        display: none;
+    }
+}
 
 @media only screen and (max-width:1024px){
     .md-mainimg img{
@@ -197,9 +202,6 @@ footer{
         width: 400px;
     }
 
-    .md-linksiconleft, .md-linksiconright{
-        display: none;
-    }
 }
 
 @media only screen and (max-width:768px){
