@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./query.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css" type="text/css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="md-overall-container container-fluid p-0">
+        <div class="md-home">
+            <div class="navbar md-navbar d-flex justify-content-evenly gap-3 p-3">
+                <div class="md-links1 d-flex gap-5">
+                    <a href="" class="text-dark text-decoration-none">HOME</a>
+                    <a href="" class="text-dark text-decoration-none">PRODUCTS</a>
+                    <a href="" class="text-dark text-decoration-none">CAREER</a>
+                </div>
+                <h1 class="md-logo p-0 m-0 text-white">AGV</h1>
+                <div class="md-links2 d-flex gap-5">
+                    <a href="" class="text-dark text-decoration-none">SAFETY</a>
+                    <a href="" class="text-dark text-decoration-none">CONTACT US</a>
+                    <a href="" class="text-dark text-decoration-none"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+            </div>
+            <div class="md-mainhome d-flex justify-content-evenly align-items-center h-100">
+                <div class="md-mainleft">
+                    <div class="d-flex flex-column justify-content-center align-items-center gap-1 w-100">
+                        <div class="md-mainleftimg d-flex gap-3">
+                            <img src="./circle.png" alt="">
+                            <div>
+                                <p class="m-0 p-0">Check out!</p>
+                                <p class="m-0 p-0">2025 Collections Out!</p>
+                            </div>
+                        </div>
+                        <p class="m-0 p-0 text-danger md-intro">INTRODUCING THE ALL NEW</p>
+                        <h3 class="m-0 p-0"></h3>
+                        <button class="rounded-pill w-50 border border-1 bg-transparent">Know More</button>
+                    </div>
+                </div>
+                <div class="md-mainimg align-self-center d-flex flex-column align-items-center">
+                    <img src="./AGVinHome.png" alt="" class="mb-5">
+                    <button onclick="click()"
+                        class="rounded-pill w-50 border border-2 border-light bg-transparent text-white align-self-center justify-self-end">See
+                        Models</button>
+                </div>
+                <div id="summa" class="md-mainright d-flex justify-content-center">
+                    <img src="./blackdes1.png" alt="">
+                    <img src="./blackdes2.png" alt="">
+                    <img src="./blackdes3.png" alt="">
+                    <img src="./blackdes4.png" alt="">
+                    <img src="./blackdes5.png" alt="">
+                    <!-- <img src="./blackdes6.png" alt="">
+                    <img src="./blackdes7.png" alt=""> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="md-home2">
+            <div class="md-home2top h-75 d-flex justify-content-center">
+                <div class="d-flex flex-column gap-3 justify-content-evenly pt-5">
+                    <h1><span>Welcome to</span><br>AGV LifeGaurds</h1>
+                    <div class="md-homeline w-25"></div>
+                    <p class="w-50">Since 1947, AGV has been a symbol of safety and innovation in the world of
+                        motorcycle helmets.
+                        With unmatched experience and an uncompromising passion, we’ve redefined the way riders
+                        experience the road and the track. Every AGV helmet embodies our mission: to deliver protection,
+                        aerodynamics, and comfort with a design that stands out.</p>
+                </div>
+                <div class="text-end d-flex flex-column gap-3 justify-content-evenly pt-5">
+                    <h1><span>Glad You Chose</span><br>AGV</h1>
+                    <div class="md-homeline w-25 align-self-end"></div>
+                    <p class="w-50 text-end align-self-end">Whether you're looking for a full-face helmet for maximum
+                        control in the turns, an open-face
+                        helmet to feel the wind, or a modular helmet for ultimate versatility, AGV is with
+                        you every step of the way. Choosing AGV helmet means trusting decades of experience,
+                        exceptional attention to detail, and quality proven by the world’s top riders.</p>
+                </div>
+            </div>
+            <div class="md-home2bottom h-25 position-relative">
+                <img src="./subhomeimg.png" alt="" class="position-absolute md-home2bottomimg">
+            </div>
+        </div>
+
+        <div class="md-products d-flex justify-content-center align-items-center pt-5">
+            <div class="d-flex flex-column align-items-center w-75 justify-content-between">
+                <p class="md-productcatogory text-danger fs-4">Product Catogories</p>
+                <div class="d-flex gap-3">
+                    <button class="border border-0 bg-transparent text-danger fs-1"><i class="fa-solid fa-chevron-left"></i></button>
+                    <div class="d-flex gap-3 md-productdescription">
+                    <h1>AGV Helmet</h1>
+                    <div class="md-productline bg-dark"></div>
+                    <p>AGV has been a leading force in helmet design and motorcycle racing since its foundation,
+                        ceaselessly innovating every area from aerodynamics, comfort and safety to graphics, sponsorship
+                        and advertising. Founded in 1947 by Gino Amisano (1920–2009), AGV rapidly won an unrivalled
+                        reputation for its innovative designs and materials, tested on the racetrack and developed with
+                        sponsored World Championship riders, including 15-times World Champion Giacomo Agostini and
+                        modern MotoGP legend Valentino Rossi.</p>
+                    </div>
+                    <button class="border border-0 bg-transparent text-danger fs-1"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+                <div class="md-productimages d-flex">
+                    <img src="./productBlack.png" alt="">
+                    <!-- <img src="./productBlue.png" alt="">
+                    <img src="./productOrange.png" alt="">
+                    <img src="./productWhite.png" alt=""> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="md-careerandsafety d-flex flex-column justify-content-end pb-5">
+            <div class="d-flex flex-column gap-3 align-items-center">
+            <h2 class="align-self-center">CAREER</h2>
+            <div class="md-career d-flex flex-wrap gap-3 justify-content-center">
+                <div class="career1"></div>
+                <div class="career2"></div>
+                <div class="career3"></div>
+                <div class="career4"></div>
+                <div class="career5"></div>
+                <div class="career6"></div>
+                <!-- <div class="career7"></div> -->
+            </div>
+            </div>
+           <div class="md-safety d-flex gap-3 justify-content-center">
+                <div class="d-flex flex-column align-items-center">
+                    <img src="./helmet1.jpg" alt="">
+                    <div class="d-flex flex-column align-items-center">
+                        <h4>helmet1</h4>
+                        <p>with black screen</p>
+                    </div>
+                    <button class="border border-1 border-dark rounded-pill bg-transparent">Buy Now</button>
+                </div>
+                <!-- <div class="d-flex flex-column align-items-center">
+                    <img src="./helmet1.jpg" alt="">
+                    <div class="d-flex flex-column align-items-center">
+                        <h4>helmet1</h4>
+                        <p>with black screen</p>
+                    </div>
+                    <button class="border border-1 border-dark rounded-pill bg-transparent">Buy Now</button>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                    <img src="./helmet1.jpg" alt="">
+                    <div class="d-flex flex-column align-items-center">
+                        <h4>helmet1</h4>
+                        <p>with black screen</p>
+                    </div>
+                    <button class="border border-1 border-dark rounded-pill bg-transparent">Buy Now</button>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                    <img src="./helmet1.jpg" alt="">
+                    <div class="d-flex flex-column align-items-center">
+                        <h4>helmet1</h4>
+                        <p>with black screen</p>
+                    </div>
+                    <button class="border border-1 border-dark rounded-pill bg-transparent">Buy Now</button>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                    <img src="./helmet1.jpg" alt="">
+                    <div class="d-flex flex-column align-items-center">
+                        <h4>helmet1</h4>
+                        <p>with black screen</p>
+                    </div>
+                    <button class="border border-1 border-dark rounded-pill bg-transparent">Buy Now</button>
+                </div>
+                <div>
+                    <img src="./helmet1.jpg" alt="">
+                    <div>
+                        <h4>helmet1</h4>
+                        <p>with black screen</p>
+                    </div>
+                    <button>Buy Now</button>
+                </div>
+                <div>
+                    <img src="./helmet1.jpg" alt="">
+                    <div>
+                        <h4>helmet1</h4>
+                        <p>with black screen</p>
+                    </div>
+                    <button>Buy Now</button>
+                </div>
+                <div>
+                    <img src="./helmet1.jpg" alt="">
+                    <div>
+                        <h4>helmet1</h4>
+                        <p>with black screen</p>
+                    </div>
+                    <button>Buy Now</button>
+                </div> -->
+            </div>
+        </div>
+
+        <footer class="bg-dark text-white p-3">
+            <div class="row md-footersub">
+                <div class="col">
+                    <div class="row">
+                        <h1><span class="text-success">A</span><span class="text-white">G</span><span class="text-danger">V</span></h1>
+                    </div>
+                    <div class="row">
+                        <p>AGV Helmets</p>
+                    </div>
+                    <div class="row">
+                        <div class="col"><i class="fa-brands fa-facebook"></i></div>
+                        <div class="col"><i class="fa-brands fa-instagram"></i></div>
+                        <div class="col"><i class="fa-brands fa-x-twitter"></i></div>
+                        <div class="col"><i class="fa-brands fa-linkedin-in"></i></div>
+                        <div class="col"><i class="fa-brands fa-google-play"></i></div>
+                        <div class="col"><i class="fa-brands fa-amazon"></i></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <h4 class="text-danger">General</h4>
+                    </div>
+                    <div class="row">
+                        <p>Home</p>
+                    </div>
+                    <div class="row">
+                        <p>Career</p>
+                    </div>
+                    <div class="row">
+                        <p>safety</p>
+                    </div>
+                    <div class="row">
+                        <p>Contact us</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <h4 class="text-danger">CORPORATE</h4>
+                    </div>
+                    <div class="row">
+                        <p>Our History</p>
+                    </div>
+                    <div class="row">
+                        <p>Press Area</p>
+                    </div>
+                    <div class="row">
+                        <p>Release Notes</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <h4 class="text-danger">PRODUCTS</h4>
+                    </div>
+                    <div class="row">
+                        <p>Warranty</p>
+                    </div>
+                    <div class="row">
+                        <p>User Manuals</p>
+                    </div>
+                    <div class="row">
+                        <p>Size Guide</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <h4 class="text-danger">LEGAL</h4>
+                    </div>
+                    <div class="row">
+                        <p>Terms & Conditions</p>
+                    </div>
+                    <div class="row">
+                        <p>Cookie Policy</p>
+                    </div>
+                    <div class="row">
+                        <p>Privacy Policy</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div>
+
+        </div>
+        <script src="./index.js"></script>
+    </body>
+
+</html>

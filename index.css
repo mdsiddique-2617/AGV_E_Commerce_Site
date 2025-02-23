@@ -1,0 +1,381 @@
+*{
+    font-family: "Frank Ruhl Libre", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.md-home{
+    background-image: linear-gradient(to right, white 42.5%, red 42.5%, red 57.5%, white 57.5%, white 100%);
+    height: 100vh;
+}
+
+.md-navbar{
+    width: 100%;
+    position: fixed !important;
+    z-index: 999;
+}
+
+.md-logo{
+    font-family: "Grechen Fuemen", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.md-mainimg img{
+    width: 350px;
+    filter: drop-shadow(1px 75px 22px black);
+}
+
+.md-mainimg button:hover{
+    color: red !important;
+    background-color: white !important;
+}
+
+.md-mainleft{
+    width: 40%;
+}
+
+.md-mainleftimg img{
+    width: 50px;
+}
+
+.md-intro{
+    letter-spacing: 0.5px;
+}
+
+.md-mainright{
+    width: 40%;
+}
+
+.md-mainright img{
+    width: 50px;
+    height: 50px;
+}
+
+.md-home2{
+    min-height: 100vh;
+}
+
+.md-home2top{
+    background-image: linear-gradient(to right, white 42.5%, red 42.5%, red 57.5%, white 57.5%, white 100%);
+}
+
+.md-home2top div{
+    width: 40%;
+}
+
+.md-homeline{
+    height: 1px;
+    background-color: black;
+}
+
+.md-home2bottomimg{
+    width: 400px;
+    top: -300px;
+    left: 440px;
+}
+
+.md-products{
+    background-image: radial-gradient(white, gray );
+    min-height: 100vh;
+}
+
+.md-productcatogory{
+    letter-spacing: 2px;
+}
+
+.md-productline{
+    width: 2px;
+    background-image: linear-gradient(to bottom, grey, black, grey);
+}
+
+.md-productimages img{
+    width: 450px;
+    /* height: 250px; */
+}
+
+.md-careerandsafety{
+    min-height: 100vh;
+}
+
+/* .md-career{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+} */
+
+.career1, 
+.career2, 
+.career3, 
+.career4, 
+.career5,
+.career6,
+.career7{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 2s;
+}
+
+.career1{
+    background-image: url("./productionmanager.jpg");
+}
+
+.career1:hover{
+    opacity: 0.5;
+}
+.career2{
+    background-image: url("./qualtyinspector.jpg");
+}
+
+.career3{
+    background-image: url("./designer.jpg");
+}
+
+.career4{
+    background-image: url("./machineoperator.jpg");
+}
+
+.career5{
+    background-image: url("./warehousemanager.jpg");
+}
+
+.career6{
+    background-image: url("./packagingstaff.jpg");
+}
+
+.career7{
+    background-image: url("./shopassistant.jpg");
+}
+
+.md-safety img{
+    width: 190px;
+    height: 190px;
+}
+
+.md-safety button{
+    padding: 2px 15px;
+}
+
+footer{
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.md-footersub{
+    width: 90%;
+}
+
+
+@media only screen and (max-width:1024px){
+    .md-mainimg img{
+        width: 250px;
+        margin-bottom: 1rem !important;
+        filter: drop-shadow(1px 30px 22px black);
+    }
+
+    .md-home2bottomimg{
+        top: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .md-home2bottom{
+        min-height: 200px;
+    }
+    
+    .md-home2bottomimg{
+        width: 325px;
+        top: -225px;
+    }
+   
+    .md-productimages img{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .md-mainimg img{
+        width: 225px;
+        margin-bottom: 1rem !important;
+        filter: drop-shadow(1px 30px 22px black);
+    }
+    
+    .md-links1{
+        flex-direction: column;
+        text-align: center;
+        display: none !important;
+    }
+
+    .md-links2{
+        flex-direction: column;
+        text-align: center;
+        display: none !important;
+    }
+
+    .md-home2bottom{
+        min-height: 200px;
+    }
+
+    .md-home2bottomimg{
+        width: 325px;
+        top: -225px;
+    }
+
+    .md-productdescription{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .md-productdescription p{
+        text-align: center;
+    }
+
+    .md-products button{
+        height: fit-content;
+        align-self: flex-end;
+    }
+
+    .md-productimages img{
+        width: 375px;
+    }
+}
+
+@media only screen and (max-width:425px){
+    .md-home{
+        background-image: linear-gradient(to right, white 35%, red 35%, red 65%, white 65%, white 100%);
+    }
+
+    .md-mainimg img{
+        width: 200px;
+        margin-bottom: 1rem !important;
+        filter: drop-shadow(1px 30px 22px black);
+    }
+    
+    .md-navbar{
+        flex-direction: column;
+        padding: 0% !important;
+        /* display: none !important; */
+        /* justify-content: start; */
+    }
+    .md-logo{
+        order: -1;
+    }
+    
+    .md-mainhome{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .md-mainleft{
+        width: 100% !important;
+        justify-content: space-around;
+        padding: 0% !important;
+    }
+
+    .md-mainleft p{
+        color: black !important;
+    }
+    
+    .md-mainleft button{
+        border-color: black !important;
+        color: white;
+    }
+    .md-mainimg{
+        width: 100%;
+    }
+
+    .md-mainimg button{
+        border-color: black !important;
+    }
+
+    .md-mainright{
+        width: 100%;
+        padding: 0% !important;
+    }
+
+    .md-mainleft button{
+        border-color: black !important;
+    }
+
+    .md-home2top{
+        flex-direction: column;
+        align-items: center !important;
+        background-image: linear-gradient(to right, white 35%, red 35%, red 65%, white 65%, white 100%);
+    }
+
+    .md-home2top div{
+        width: 90% !important;
+        text-align: center !important;
+    }
+
+    .md-home2top div div{
+        width: 90% !important;
+        text-align: center !important;
+        align-self: center !important;
+    }
+
+    .md-home2top div p{
+        width: 90% !important;
+        text-align: center !important;
+        align-self: center !important;
+    }
+
+    .md-home2bottom{
+        min-height: 300px;
+    }
+
+    .md-home2bottomimg{
+        width: 275px;
+        top: -55px;
+    }
+
+    .md-productimages img{
+        width: 275px;
+    }
+}
+
+@media only screen and (max-width:375px){
+    .md-mainimg img{
+        width: 175px;
+    }
+  
+    .md-home2bottom{
+        min-height: 295px;
+    }
+
+    .md-home2bottomimg{
+        width: 250px;
+        top: -40px;
+    }
+
+    .md-productimages img{
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width:320px){
+    .md-mainimg img{
+        width: 150px;
+    }
+
+    .md-home2bottomimg{
+        width: 225px;
+        top: -25px;
+    }
+
+    .md-home2bottom{
+        min-height: 270px;
+    }
+
+    .md-productimages img{
+        width: 325px;
+    }
+}
+
+
