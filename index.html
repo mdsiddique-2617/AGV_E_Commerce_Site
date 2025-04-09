@@ -94,11 +94,11 @@
             </div>
         </div>
 
-        <div class="md-products d-flex justify-content-center align-items-center pt-5" id="Products">
+        <div class="md-products d-flex justify-content-center align-items-start pt-5 position-relative" id="Products">
             <div class="d-flex flex-column align-items-center w-75 justify-content-between">
                 <p class="md-productcatogory text-danger fs-4">Product Catogories</p>
                 <div class="d-flex gap-3">
-                    <button class="border border-0 bg-transparent text-danger fs-1"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="border border-0 bg-transparent text-danger fs-1" id="leftbutton" onclick="rotateleft()"><i class="fa-solid fa-chevron-left"></i></button>
                     <div class="d-flex gap-3 md-productdescription">
                     <h1>AGV Helmet</h1>
                     <div class="md-productline bg-dark"></div>
@@ -109,13 +109,13 @@
                         sponsored World Championship riders, including 15-times World Champion Giacomo Agostini and
                         modern MotoGP legend Valentino Rossi.</p>
                     </div>
-                    <button class="border border-0 bg-transparent text-danger fs-1"><i class="fa-solid fa-chevron-right"></i></button>
+                    <button class="border border-0 bg-transparent text-danger fs-1" id="rightbutton" onclick="rotateright()"><i class="fa-solid fa-chevron-right"></i></button>
                 </div>
-                <div class="md-productimages d-flex">
-                    <img src="./productBlack.png" alt="">
-                    <!-- <img src="./productBlue.png" alt="">
-                    <img src="./productOrange.png" alt="">
-                    <img src="./productWhite.png" alt=""> -->
+                <div class="md-productimages d-flex position-absolute">
+                    <img src="./productBlack.png" alt="" class="position-absolute product-1" >
+                    <img src="./productBlue.png" alt="" class="position-absolute product-2">
+                    <img src="./productOrange.png" alt="" class="position-absolute product-3">
+                    <img src="./productWhite.png" alt="" class="position-absolute  product-4">
                 </div>
             </div>
         </div>
@@ -124,32 +124,52 @@
             <div class="d-flex flex-column gap-3 align-items-center">
             <h2 class="align-self-center">CAREER</h2>
             <div class="md-career d-flex flex-wrap gap-3 justify-content-center">
-                <div class="career1"></div>
-                <div class="career2"></div>
-                <div class="career3"></div>
-                <div class="career4"></div>
-                <div class="career5"></div>
-                <div class="career6"></div>
+                <div class="career1 position-relative">
+                    <div class="job-desc position-absolute w-100 text-center text-white">
+                        <h6>Production Manager</h6>
+                        <p>7 - 8 Lpa/-</p>
+                        <button class="rounded-pill w-50">Apply</button>
+                    </div>
+                </div>
+                <div class="career2 position-relative">
+                    <div class="job-desc position-absolute w-100 text-center text-white">
+                        <h6>Quality Inspector</h6>
+                        <p>4 - 6.5 Lpa/-</p>
+                        <button>Apply</button>
+                    </div>
+                </div>
+                <div class="career3 position-relative">
+                    <div class="job-desc position-absolute w-100 text-center text-white">
+                        <h6>Designer</h6>
+                        <p>3 - 5 Lpa/-</p>
+                        <button>Apply</button>
+                    </div>
+                </div>
+                <div class="career4 position-relative">
+                    <div class="job-desc position-absolute w-100 text-center text-white">
+                        <h6>Machine Operator</h6>
+                        <p>4.5 - 7 Lpa/-</p>
+                        <button>Apply</button>
+                    </div>
+                </div>
+                <div class="career5 position-relative">
+                    <div class="job-desc position-absolute w-100 text-center text-white">
+                        <h6>Warehouse Manager</h6>
+                        <p>7 - 9 Lpa/-</p>
+                        <button>Apply</button>
+                    </div>
+                </div>
+                <div class="career6 position-relative">
+                    <div class="job-desc position-absolute w-100 text-center text-white">
+                        <h6>Packaging staff</h6>
+                        <p>4.5 - 6 Lpa/-</p>
+                        <button>Apply</button>
+                    </div>
+                </div>
                 <!-- <div class="career7"></div> -->
             </div>
             </div>
-           <div class="md-safety d-flex gap-3 justify-content-center" id="Safety">
-                <div class="d-flex flex-column align-items-center">
-                    <img src="./helmet1.jpg" alt="">
-                    <div class="d-flex flex-column align-items-center">
-                        <h4>helmet1</h4>
-                        <p>with black screen</p>
-                    </div>
-                    <button class="border border-1 border-dark rounded-pill bg-transparent">Buy Now</button>
-                </div>
-                <!-- <div class="d-flex flex-column align-items-center">
-                    <img src="./helmet1.jpg" alt="">
-                    <div class="d-flex flex-column align-items-center">
-                        <h4>helmet1</h4>
-                        <p>with black screen</p>
-                    </div>
-                    <button class="border border-1 border-dark rounded-pill bg-transparent">Buy Now</button>
-                </div>
+           <div class="md-safety d-flex flex-row gap-3 justify-content-center pt-4 pb-4 align-items-center" id="Safety">
                 <div class="d-flex flex-column align-items-center">
                     <img src="./helmet1.jpg" alt="">
                     <div class="d-flex flex-column align-items-center">
@@ -159,45 +179,61 @@
                     <button class="border border-1 border-dark rounded-pill bg-transparent">Buy Now</button>
                 </div>
                 <div class="d-flex flex-column align-items-center">
-                    <img src="./helmet1.jpg" alt="">
+                    <img src="./helmet2.jpg" alt="">
                     <div class="d-flex flex-column align-items-center">
-                        <h4>helmet1</h4>
+                        <h4>helmet2</h4>
                         <p>with black screen</p>
                     </div>
                     <button class="border border-1 border-dark rounded-pill bg-transparent">Buy Now</button>
                 </div>
                 <div class="d-flex flex-column align-items-center">
-                    <img src="./helmet1.jpg" alt="">
+                    <img src="./helmet3.jpg" alt="">
                     <div class="d-flex flex-column align-items-center">
-                        <h4>helmet1</h4>
+                        <h4>helmet3</h4>
                         <p>with black screen</p>
                     </div>
                     <button class="border border-1 border-dark rounded-pill bg-transparent">Buy Now</button>
                 </div>
-                <div>
-                    <img src="./helmet1.jpg" alt="">
+                <div class="d-flex flex-column align-items-center">
+                    <img src="./helmet4.jpg" alt="">
+                    <div class="d-flex flex-column align-items-center">
+                        <h4>helmet4</h4>
+                        <p>with black screen</p>
+                    </div>
+                    <button class="border border-1 border-dark rounded-pill bg-transparent">Buy Now</button>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                    <img src="./helmet5.jpg" alt="">
+                    <div class="d-flex flex-column align-items-center">
+                        <h4>helmet5</h4>
+                        <p>with black screen</p>
+                    </div>
+                    <button class="border border-1 border-dark rounded-pill bg-transparent">Buy Now</button>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                    <img src="./helmet6.jpg" alt="">
                     <div>
-                        <h4>helmet1</h4>
+                        <h4>helmet6</h4>
                         <p>with black screen</p>
                     </div>
-                    <button>Buy Now</button>
+                    <button class="border border-1 border-dark rounded-pill bg-transparent">Buy Now</button>
                 </div>
-                <div>
-                    <img src="./helmet1.jpg" alt="">
+                <div class="d-flex flex-column align-items-center">
+                    <img src="./helmet7.jpg" alt="">
                     <div>
-                        <h4>helmet1</h4>
+                        <h4>helmet7</h4>
                         <p>with black screen</p>
                     </div>
-                    <button>Buy Now</button>
+                    <button class="border border-1 border-dark rounded-pill bg-transparent">Buy Now</button>
                 </div>
-                <div>
-                    <img src="./helmet1.jpg" alt="">
+                <div class="d-flex flex-column align-items-center">
+                    <img src="./helmet8.jpg" alt="">
                     <div>
-                        <h4>helmet1</h4>
+                        <h4>helmet8</h4>
                         <p>with black screen</p>
                     </div>
-                    <button>Buy Now</button>
-                </div> -->
+                    <button class="border border-1 border-dark rounded-pill bg-transparent">Buy Now</button>
+                </div>
             </div>
         </div>
 
@@ -217,6 +253,9 @@
                         <div class="col"><i class="fa-brands fa-linkedin-in"></i></div>
                         <div class="col"><i class="fa-brands fa-google-play"></i></div>
                         <div class="col"><i class="fa-brands fa-amazon"></i></div>
+                    </div>
+                    <div class="row">
+                        <p>Devoloper by <a href="https://www.linkedin.com/in/muhammed-siddique-6616042a1/">Muhammed Siddique</a></p>
                     </div>
                 </div>
                 <div class="col">

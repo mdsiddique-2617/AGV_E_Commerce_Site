@@ -90,8 +90,44 @@
     background-image: linear-gradient(to bottom, grey, black, grey);
 }
 
+.md-productimages{
+    width: 60%;
+    height: 120%;
+    border-radius: 50%;
+    top: 45%;
+    transition: 1s;
+}
+
+.product-1{
+    top: -5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.product-2{
+    right: -10%;
+    top: 30%;
+    transform: translateY(-50%);
+    transform: rotate(90deg);
+}
+
+.product-3{
+    bottom: -5%;
+    left: 20%;
+    transform: translateX(-50%);
+    transform: rotate(180deg);
+}
+
+.product-4{
+    left: -10%;
+    top: 30%;
+    transform: translateY(-50%);
+    transform: rotate(-90deg);
+}
+
 .md-productimages img{
     width: 450px;
+    transition: 1s;
     /* height: 250px; */
 }
 
@@ -119,13 +155,39 @@
     transition: 2s;
 }
 
+.career1:hover, 
+.career2:hover, 
+.career3:hover, 
+.career4:hover, 
+.career5:hover,
+.career6:hover,
+.career7:hover{
+    transition: 1s;
+    background-image: linear-gradient(black);
+    border-radius: 25px;
+}
+
+.career1:hover .job-desc,
+.career2:hover .job-desc, 
+.career3:hover .job-desc, 
+.career4:hover .job-desc, 
+.career5:hover .job-desc,
+.career6:hover .job-desc,
+.career7:hover .job-desc{
+    display: block;
+}
+
+.job-desc{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
 .career1{
     background-image: url("./productionmanager.jpg");
 }
 
-.career1:hover{
-    opacity: 0.5;
-}
 .career2{
     background-image: url("./qualtyinspector.jpg");
 }
@@ -148,6 +210,10 @@
 
 .career7{
     background-image: url("./shopassistant.jpg");
+}
+
+.md-safety{
+    flex-wrap: wrap;
 }
 
 .md-safety img{
@@ -275,6 +341,10 @@ footer{
 
     .rotaterighticon{
         transform: rotate(-360deg);
+    }
+    
+    .md-productimages{
+        display: none !important;
     }
 }
 
@@ -422,7 +492,7 @@ footer{
     }
 }
 
-@media only screen and (max-width:320px){
+@media only screen and (max-width:320px){    
     .md-mainimg img{
         width: 150px;
     }
@@ -435,9 +505,9 @@ footer{
     .md-home2bottom{
         min-height: 270px;
     }
-
+    
     .md-productimages img{
-        width: 325px;
+        width: 225px;
     }
 }
 

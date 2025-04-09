@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle{
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background-color: violet;
+            position: relative;
+            transition: 1s;
+            animation-timing-function: ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .circlerotateright{
+            transform: rotate(90deg);
+        }
+
+        .circlerotateleft{
+            transform: rotate(-90deg);
+        }
+
+        .circle div{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            position: absolute;
+            color: white;
+            font-size: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .go1{
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .go2{
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .go3{
+            left: 80%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .go4{
+            left: 50%;
+            top: 80%;
+            transform: translateX(-50%);
+            transform: rotate();
+        }
+
+        button{
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="circle" id="circle">
+        <div class="go1">4</div>
+        <div class="go2">1</div>
+        <div class="go3">2</div>
+        <div class="go4">3</div>
+        <button id="btnlft" onclick="left()">Left</button>
+        <button id="btnrt" onclick="right()">Right</button>
+    </div>
+    <script>
+        let cir = document.getElementById('circle');
+        let btnlft = document.getElementById('btnlft');
+        let btnrt = document.getElementById('btnrt');
+        let deg = 0;
+        btnlft.disabled = true;
+
+        function left(){
+            if(deg >= -90){
+                btnlft.disabled = true;
+                btnrt.disabled = false;
+            }
+                deg = deg + 90;
+                cir.style = `transform: rotate(${deg}deg)`;
+                console.log(deg);
+        }
+
+        function right(){
+            deg = deg - 90;
+            cir.style = `transform: rotate(${deg}deg)`;
+            btnlft.disabled = false;
+            console.log(deg);         
+            if(deg <= -270){
+            btnrt.disabled = true;
+        }
+        }
+
+        
+
+    </script>
+</body>
+</html>
